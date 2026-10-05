@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111d34" />
+  <title>Harrogate Raiders — Basketball Season Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#dashboard"><img class="brand-logo" src="assets-harrogate-raiders-logo.jpg" alt="Harrogate Raiders crest" /><span class="brand-copy"><strong>Harrogate Raiders</strong><small>Basketball tracker</small></span></a>
+      <div class="season-label">SEASON</div>
+      <select id="season-select" class="season-select" aria-label="Season"></select>
+      <div class="side-label">WORKSPACE</div>
+      <nav class="side-nav" aria-label="Main navigation">
+        <button data-view="dashboard" class="nav-item active"><span class="nav-icon">◫</span>Overview</button>
+        <button data-view="games" class="nav-item"><span class="nav-icon">▤</span>Games</button>
+        <button data-view="stats" class="nav-item"><span class="nav-icon">▥</span>Statistics</button>
+        <button data-view="players" class="nav-item"><span class="nav-icon">♙</span>Players</button>
+        <button data-view="more" class="nav-item"><span class="nav-icon">•••</span>More</button>
+      </nav>
+      <div class="sidebar-bottom"><div class="season-card"><span class="status-dot"></span><div><strong id="season-sidebar-name">2026/27 Season</strong><small>Season in progress</small></div></div><span class="side-foot">A better game, every game.</span></div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><div class="breadcrumb"><img class="top-logo" src="assets-harrogate-raiders-logo.jpg" alt="" /><span>HARROGATE RAIDERS</span><b>/</b><strong id="top-title">Overview</strong></div><div class="top-actions"><span class="today-label" id="today-label"></span><button class="button button-primary top-add" id="add-game-top"><span>＋</span> Add game</button></div></header>
+      <section id="page" class="page-content"></section>
+    </main>
+  </div>
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <button data-view="dashboard" class="active"><span>◫</span>Home</button><button data-view="games"><span>▤</span>Games</button><button id="mobile-add" class="mobile-add"><span>＋</span></button><button data-view="stats"><span>▥</span>Stats</button><button data-view="more"><span>•••</span>More</button>
+  </nav>
+  <div id="overlay-root"></div>
+  <input id="import-file" type="file" accept="application/json,.json" hidden />
+  <script src="app.js"></script>
+</body>
+</html>
