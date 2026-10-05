@@ -1,0 +1,7 @@
+{
+  "name": "baseline-basketball-season-tracker",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/*.test.cjs"
+  }
+}
