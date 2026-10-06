@@ -145,3 +145,9 @@ body{background:radial-gradient(ellipse at 76% 0%,#1c2b45 0%,#101a2d 48%,#0d1729
 .leader-card .highlight-name{overflow-wrap:anywhere}
 .leader-action{display:block;margin-top:8px;font-size:10px;font-weight:700;color:#d5ab63}
 .leaderboard-table{min-width:520px}
+/* Player names link to their profile throughout the tracker. */
+.player-inline-link{appearance:none;border:0;background:transparent;padding:0;color:#d5ab63;text-decoration:underline;text-decoration-color:#80683f;text-underline-offset:2px;cursor:pointer;font:inherit;text-align:left}
+.player-inline-link:hover{color:#f0cf88;text-decoration-color:currentColor}
+.player-inline-link:focus-visible{outline:2px solid #d5ab63;outline-offset:2px;border-radius:2px}
+.leader-card{appearance:none}
+.leader-name-link{color:#f2d48d}
