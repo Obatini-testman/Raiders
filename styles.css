@@ -137,3 +137,11 @@ body{background:radial-gradient(ellipse at 76% 0%,#1c2b45 0%,#101a2d 48%,#0d1729
 .mobile-nav button.active{color:#f0cf88}
 .mobile-nav .mobile-add{background:linear-gradient(145deg,#e1c17e,#c99d53);color:#18233a;border:1px solid #f1d999;box-shadow:0 4px 15px #d0a34a50}
 .toast{background:#e1c17e;color:#18233a;font-weight:700}
+
+/* Season leader cards open a complete ranked list. */
+.leader-card{width:100%;font:inherit;color:inherit;text-align:left;cursor:pointer;transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease}
+.leader-card:hover{transform:translateY(-2px);border-color:#d5ab63;box-shadow:0 12px 25px #070d1928}
+.leader-card:focus-visible{outline:3px solid #d5ab63;outline-offset:3px}
+.leader-card .highlight-name{overflow-wrap:anywhere}
+.leader-action{display:block;margin-top:8px;font-size:10px;font-weight:700;color:#d5ab63}
+.leaderboard-table{min-width:520px}
