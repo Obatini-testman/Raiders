@@ -151,3 +151,8 @@ body{background:radial-gradient(ellipse at 76% 0%,#1c2b45 0%,#101a2d 48%,#0d1729
 .player-inline-link:focus-visible{outline:2px solid #d5ab63;outline-offset:2px;border-radius:2px}
 .leader-card{appearance:none}
 .leader-name-link{color:#f2d48d}
+
+/* Game record cards open the matching game. */
+.game-record-link{appearance:none;text-align:left;color:inherit;font:inherit;width:100%;cursor:pointer;transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease}
+.game-record-link:hover{transform:translateY(-2px);border-color:#d5ab63;box-shadow:0 12px 25px #070d1928}
+.game-record-link:focus-visible{outline:3px solid #d5ab63;outline-offset:3px}
